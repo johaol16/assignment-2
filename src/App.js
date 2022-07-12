@@ -16,6 +16,7 @@ function App() {
           rel="noopener noreferrer"
         >
           LEARN RREACT
+          hejhej
         </a>
       </header>
     </div>
