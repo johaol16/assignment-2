@@ -24,7 +24,6 @@ const LoginForm = () => {
     const [ apiError, setApiError ] = useState(null)
 
     // Side Effects
-
     useEffect(() => {
         console.log("User has changed", user)
         if (user !== null) {
