@@ -3,15 +3,17 @@ import {BrowserRouter, Routes, Route} from "react-router-dom"
 import Login from './views/Login'; 
 import Translation from './views/Translation'; 
 import Profile from './views/Profile'; 
+import Header from './components/Header/Header'
 
 
 function App() {
-   console.log(
-   process.env.REACT_APP_API_KEY
-    )
+  //  console.log(
+  //  process.env.REACT_APP_API_KEY
+  //   )
   return (
     <BrowserRouter>
       <div className="App">
+      <Header />
         <Routes>
           <Route path="/" element={ <Login /> }/>
           <Route path="/translation" element={ <Translation /> }/>
