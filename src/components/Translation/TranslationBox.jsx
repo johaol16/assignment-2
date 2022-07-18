@@ -13,18 +13,3 @@ const TranslationBox = (input) => {
 }
 
 export default TranslationBox
-
-
-
-//Från video
-
-// const TranslationForm = () => {
-
-//     const { register, formState: { errors }} = useForm()
-//     return (
-//         <form>
-
-//         </form>
-//     )
-// }
-// export default TranslationForm

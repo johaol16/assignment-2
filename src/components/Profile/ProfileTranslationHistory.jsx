@@ -1,4 +1,5 @@
 import ProfileTranslationHistoryItem from "./ProfileTranslationHistoryItem"
+import "./Profile.css"
 
 const ProfileTranslationHistory = ({ translations }) => {
     
@@ -7,9 +8,9 @@ const ProfileTranslationHistory = ({ translations }) => {
         )
     
     return (
-        <section>
-            <h4>Your translation history</h4>
-            <ul>{ translationList.slice(-10) }</ul>
+        <section id="profileSection">
+            <h3>Your translation history</h3>
+            <ol className="translationListNumbers">{ translationList.slice(-10) }</ol>
         </section>
     )
 }

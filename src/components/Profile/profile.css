@@ -1,0 +1,44 @@
+#profileSection {
+    background-color: #9D738A; 
+    padding: 50px;
+    border-radius: 20px;
+    margin: 40px;
+
+}
+
+.translationListNumbers {
+    list-style-type: none;
+    background: #fffbfb;
+    margin: 8px;
+    border-radius: 20px;
+    border: 2px solid lightgrey;
+
+}
+
+
+.logoutButton {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #9D738A;
+  border-radius: 12px;
+  padding: 14px 40px;;
+
+}
+
+.logoutButton:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.clearHistoryButton {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #9D738A;
+    border-radius: 12px;
+    padding: 14px 40px;;
+}
+  
+.clearHistoryButton:hover {
+      background-color: #f44336;
+      color: white;
+}
