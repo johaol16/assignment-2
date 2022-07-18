@@ -5,7 +5,7 @@ import { useUser } from "../context/UserContext"
 import { translationAdd } from "../api/translation"
 import { storageSave } from "../utils/storage"
 import { STORAGE_KEY_USER } from "../const/storageKeys"
-import '../../src/components/Translation/Translation.css';
+import '../../src/components/Translation/translation.css';
 
 
 const Translation = () => {

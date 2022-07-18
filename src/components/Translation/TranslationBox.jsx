@@ -1,4 +1,4 @@
-import "./Translation.css"
+import "./translation.css"
 
 
 const TranslationBox = (input) => {

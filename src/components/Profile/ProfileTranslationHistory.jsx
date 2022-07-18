@@ -1,5 +1,5 @@
 import ProfileTranslationHistoryItem from "./ProfileTranslationHistoryItem"
-import "./Profile.css"
+import "./profile.css"
 
 const ProfileTranslationHistory = ({ translations }) => {
     

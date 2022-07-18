@@ -8,6 +8,13 @@
 npm install
 ```
 
+```
+npm install react-hook-form
+```
+
+```
+npm install react-router
+```
 
 ## Usage
 
