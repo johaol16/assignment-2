@@ -15,8 +15,9 @@ npm install
 
 2. Write the keys into ".env" like this:
 
-...REACT_APP_API_KEY = <your key> 
-...REACT_APP_API_URL = <your url>
+REACT_APP_API_KEY = "your key"
+
+REACT_APP_API_URL = "your url"
 
 3. Start:
 ```
