@@ -1,4 +1,6 @@
+import { useState } from "react"
 import { useForm } from "react-hook-form"
+import TranslationBox from "./TranslationBox"
 
 
 
@@ -6,7 +8,12 @@ const InputBox = ({ onTranslation }) => {
 
     const { register, handleSubmit } = useForm()
 
-    const onSubmit = ({ translationNotes }) => { onTranslation(translationNotes) }
+    const [images, setImages] = useState([])
+
+    const onSubmit = ({ translationNotes }) => {
+         onTranslation(translationNotes) 
+         setImages(TranslationBox(translationNotes))
+    }
 
 
    
@@ -18,7 +25,9 @@ const InputBox = ({ onTranslation }) => {
                 <button id="translationButton" type="submit"><i id="arrow"></i></button>
             </fieldset>
         </form>
-
+        <div>
+             {images}
+        </div>
         </>
     )
 }
