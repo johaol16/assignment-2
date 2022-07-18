@@ -9,8 +9,4 @@ const TranslationBox = (input) => {
     return result
 }
 
-<<<<<<< HEAD
 export default TranslationBox
-=======
-export default TranslationBox
->>>>>>> 25f9ae9e905af946982284206ead76dd2469e998
