@@ -1,0 +1,9 @@
+#navbar {
+    background-color: #C5B7BE;
+    padding: 20px 20px 20px 40px; 
+    display: flex;
+}
+
+#title {
+    text-align: left;
+}

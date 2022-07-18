@@ -1,10 +1,11 @@
-import { useForm } from "react-hook-form";
-import { loginUser } from  "../../api/user";
-import { useState, useEffect } from "react";
-import { storageSave } from "../../utils/storage";
-import { useUser } from "../../context/UserContext";
-import { useNavigate } from "react-router-dom";
-import { STORAGE_KEY_USER } from "../../const/storageKeys";
+import { useForm } from "react-hook-form"
+import { loginUser } from  "../../api/user"
+import { useState, useEffect } from "react"
+import { storageSave } from "../../utils/storage"
+import { useUser } from "../../context/UserContext"
+import { useNavigate } from "react-router-dom"
+import { STORAGE_KEY_USER } from "../../const/storageKeys"
+import "./Login.css"
 
 
 
@@ -63,14 +64,12 @@ const LoginForm = () => {
 
     return (
         <>
-        <form onSubmit={ handleSubmit(onSubmit) }>
-            <fieldset>
-                {/* <label htmlFor="username">Username: </label> */}
-                <input type="text" placeholder="What's your name?" { ...register("username", usernameConfig) }></input>
+        <form id="logInForm" onSubmit={ handleSubmit(onSubmit) }>
+            <fieldset id="logInFieldset">
+                <input id="logInInput" type="text" placeholder="What's your name?" { ...register("username", usernameConfig) }></input>
+                <button id="logInButton" type="submit" disabled={ loading }><i id="arrow"></i></button>
                 { errorMessage }
             </fieldset>
-
-            <button type="submit" disabled={ loading }>Continue</button>
 
             { loading && <p>Logging in...</p> }
             { apiError && <p>{ apiError }</p> }

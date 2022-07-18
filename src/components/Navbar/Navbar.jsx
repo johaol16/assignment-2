@@ -1,15 +1,14 @@
 import { NavLink } from "react-router-dom"
 import { useUser } from "../../context/UserContext"
+import './Navbar.css'
 
 const Navbar = () => {
 
     const { user } = useUser()
 
     return (
-        <nav>
-            <ul>
-                <li>Translation page</li>
-            </ul>
+        <nav id="navbar">
+            <h1 id="title">Lost in Translation</h1>
 
             { user !== null &&
             <ul>
