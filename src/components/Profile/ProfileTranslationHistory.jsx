@@ -9,7 +9,7 @@ const ProfileTranslationHistory = ({ translations }) => {
     return (
         <section>
             <h4>Your translation history</h4>
-            <ul>{ translationList }</ul>
+            <ul>{ translationList.slice(-10) }</ul>
         </section>
     )
 }
