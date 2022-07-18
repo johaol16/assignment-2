@@ -6,11 +6,11 @@ export const storageSave = (key, value) => {
     // if (!value) {
     //     throw new Error("storageSave: No value provided for " + key)
     // }
-    sessionStorage.setItem(key, JSON.stringify(value))
+    localStorage.setItem(key, JSON.stringify(value))
 }
 
 export const storageRead = key => {
-    const data = sessionStorage.getItem(key)
+    const data = localStorage.getItem(key)
     if (data) {
         return JSON.parse(data)
     }
@@ -19,5 +19,5 @@ export const storageRead = key => {
 }
 
 export const storageDelete = key => {
-    sessionStorage.removeItem(key)
+    localStorage.removeItem(key)
 }
