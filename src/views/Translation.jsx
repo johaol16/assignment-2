@@ -1,10 +1,23 @@
 import withAuth from "../hoc/withAuth"
 import TranslationBox from "../components/Translation/TranslationBox"
+import InputBox from "../components/Translation/InputBox"
+import { useUser } from "../context/UserContext"
+
 
 const Translation = () => {
+
+    const { user } = useUser()
+
+    const handleTranslationClick = notes => {
+        console.log(notes.trim())
+
+    
+        
+    }
+
     return (
         <>
-            <h1>Translation</h1>
+            <InputBox onTranslation={ handleTranslationClick }/>
             <TranslationBox/>
         </>
 

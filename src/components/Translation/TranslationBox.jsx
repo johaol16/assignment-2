@@ -1,7 +1,8 @@
 import signs from "../../img/a.png"
+import "./Translation.css"
 
 const images = []
-images.push(<img src={`../../img/${"a"}.png`}></img>)
+images.push(<img alt="sign letter" src={`../../img/${"a"}.png`}></img>)
 const TranslationBox = () => {
     return (
         <>
@@ -13,3 +14,18 @@ const TranslationBox = () => {
 }
 
 export default TranslationBox
+
+
+
+//Från video
+
+// const TranslationForm = () => {
+
+//     const { register, formState: { errors }} = useForm()
+//     return (
+//         <form>
+
+//         </form>
+//     )
+// }
+// export default TranslationForm
