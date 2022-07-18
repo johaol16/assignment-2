@@ -1,4 +1,11 @@
 export const storageSave = (key, value) => {
+
+    if(!key) {
+        throw new Error("storagSave: No storage key provided")
+    }
+    // if (!value) {
+    //     throw new Error("storageSave: No value provided for " + key)
+    // }
     sessionStorage.setItem(key, JSON.stringify(value))
 }
 
