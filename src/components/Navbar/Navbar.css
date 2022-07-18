@@ -1,7 +1,7 @@
 #navbar {
     background-color: #C5B7BE;
     padding: 20px 20px 20px 40px; 
-    display: flex;
+
 }
 
 #title {
@@ -10,4 +10,28 @@
 
 #navList {
     list-style-type: none; 
+    display: flex; 
+    justify-content: flex-end;
+    margin: 20px; 
+}
+
+
+.link {
+    text-decoration: none;
+    margin: 10px; 
+    color: black;
+}
+
+/* .link:link {
+    color: black;
+} */
+
+.link:hover {
+    color: black; 
+    font-weight: 700;
+}
+
+.link:active {
+    color: black; 
+    font-weight: 700;
 }

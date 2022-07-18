@@ -10,14 +10,14 @@
 #translationButton {
     border: none; 
     border-radius: 20px; 
-    background-color: #C5B7BE;  
+    background-color: #9D738A; 
     cursor: pointer;
 }
 
 #translationFieldset {
     padding: 50px; 
     margin: 40px; 
-    background-color: #C5B7BE; 
+    background-color: #9D738A; 
     border-radius: 20px;
     border: none;
     display:flex;

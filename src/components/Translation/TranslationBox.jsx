@@ -1,9 +1,6 @@
 import "./Translation.css"
-// import signs from "../../img/a.png"
 
 
-// const images = []
-// images.push(<img alt="sign letter" src={`../../img/${"a"}.png`}></img>)
 const TranslationBox = (input) => {
     let result = []
     for (let i = 0; i < input.length; i++) {
@@ -12,4 +9,8 @@ const TranslationBox = (input) => {
     return result
 }
 
+<<<<<<< HEAD
 export default TranslationBox
+=======
+export default TranslationBox
+>>>>>>> 25f9ae9e905af946982284206ead76dd2469e998
