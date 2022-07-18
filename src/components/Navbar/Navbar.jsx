@@ -11,7 +11,7 @@ const Navbar = () => {
             <h1 id="title">Lost in Translation</h1>
 
             { user !== null &&
-            <ul>
+            <ul id="navList">
                 <li>
                 <NavLink to="/translation">Translation</NavLink>
                 </li>
